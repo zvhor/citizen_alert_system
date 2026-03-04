@@ -28,7 +28,7 @@ typedef struct OfficeAccount {
     char username[MAX_STR];
     char password[MAX_STR];
     char office_name[MAX_STR];
-    int  role;          /* OFFICE_ROLE_SUPER or OFFICE_ROLE_ADMIN */
+    int  role;        
     int  active;
     struct OfficeAccount *next;
 } OfficeAccount;
