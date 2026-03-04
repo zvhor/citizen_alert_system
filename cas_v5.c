@@ -22,9 +22,6 @@
 #define TGT_STATUS    2
 #define TGT_EDUCATION 3
 
-/* ──────────────────────────────────────────────
-   DATA STRUCTURES
-   ────────────────────────────────────────────── */
 
 typedef struct OfficeAccount {
     int  id;
@@ -64,9 +61,7 @@ typedef struct {
     int size;
 } Queue;
 
-/* ──────────────────────────────────────────────
-   GLOBAL STATE
-   ────────────────────────────────────────────── */
+
 
 static OfficeAccount *office_list  = NULL;
 static Citizen       *citizen_list = NULL;
@@ -76,9 +71,6 @@ static int oid_counter = 1;
 static int cid_counter = 100;
 static int nid_counter = 1;
 
-/* ──────────────────────────────────────────────
-   HELPERS
-   ────────────────────────────────────────────── */
 
 static const char *prio_str(int p) {
     const char *t[] = {"Low","Normal","High","EMERGENCY"};
